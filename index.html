@@ -22,7 +22,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 1; /* make sure it's on top of other elements */
+    z-index: 9999; /* make sure it's on top of other elements */
     opacity: 0; /* make it invisible */
     cursor: pointer; /* keep the pointer cursor to indicate it's clickable */
   }
@@ -32,11 +32,11 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 9999; /* make sure it's on top of all other elements */
+    z-index: 999; /* make sure it's on top of all other elements */
     text-align: center;
     font-size: 48px;
     color: #fff; /* adjust the color to your liking */
-    pointer-events: none; /* allow clicks to pass through to underlying elements */
+     /* allow clicks to pass through to underlying elements */
   }
   .overlay-text2 {
     position: absolute;
@@ -44,11 +44,11 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 9999; /* make sure it's on top of all other elements */
+    z-index: 999; /* make sure it's on top of all other elements */
     text-align: center;
     font-size: 36px;
     color: #fff; /* adjust the color to your liking */
-    pointer-events: none; /* allow clicks to pass through to underlying elements */
+     /* allow clicks to pass through to underlying elements */
     margin: 100px;
   }
   .overlay-text3 {
@@ -64,6 +64,23 @@
     pointer-events: none; /* allow clicks to pass through to underlying elements */
     margin: 300px;
   }
+  .full-page-link {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    text-decoration: none;
+    cursor: pointer;
+     /* Optional background color */
+  }
+  .invisible-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      opacity: 0;
+      cursor: pointer;
+    }
 </style>
 
 <script type="module" >
@@ -294,8 +311,10 @@
 
   rippleFlip(rippleFlipOptions)
 </script>
+
 <div class="invisible-button">
-  <button onclick="window.location.href='https://akdavis83.github.io/Alan-Davis/';"> </button>
+  
+  <button class="invisible-link" onclick="window.location.href='https://akdavis83.github.io/Alan-Davis/';"> </button>
 </div>
 
 <div class="overlay-text" style="color: white;"> Flipping The Script</div>
@@ -303,4 +322,4 @@
 <div class="overlay-text2" style="color: rgb(255, 255, 255);"> (2 Samuel 23:20-22) "And Benaiah the son of Jehoiada, the son of a valiant man, of Kabzeel, who had done many acts, he slew two lionlike men of Moab: he went down also and slew a lion in the midst of a pit in time of snow:  {21} And he slew an Egyptian, a goodly man: and the Egyptian had a spear in his hand; but he went down to him with a staff, and plucked the spear out of the Egyptian’s hand, and slew him with his own spear.  {22} These things did Benaiah the son of Jehoiada, and had the name among three mighty men." Weaponless, defenseless, the very definition of disadvantaged and yet this valiant man mangaged to pull off victory after victory. That is what I call flipping the script! These were very difficult feats for full armed men and yet Benaiah took the weapon formed against him and turned it on the oppressor. Out numbered by two lionlike men, face to face with a feral lion and once again, victory. Every man wants to be in good company like David's men, but if you want to hang with David it's a charge to be a man of valor. The Word of God, and the Spirit of God, has equipped us with all that we need to flip the script on the contrary things arrayed against us.
   </div>
 
-<div class="overlay-text3" style="color: rgb(0, 85, 255);"> </div>
+ 
